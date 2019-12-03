@@ -12,7 +12,7 @@ app.use(cors())
 const client_id = "f3ba57facce840b0b65f67329f047281"
 
 
-const redirect_uri = 'http://localhost:3000/redirect'
+const redirect_uri = 'https://spotify-back-project.herokuapp.com/redirect'
 const scope = 'playlist-read-private playlist-modify-public playlist-modify-private'
 //const credentials = require('./credentials.js')
 //"Luis Miguel", "The Strokes", "Bad bunny","Queen"
