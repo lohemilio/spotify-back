@@ -115,6 +115,7 @@ app.get('/redirect',function(req,res){
             })
         })
     })
+    return res.send("<h1>TU PLAYLIST HA SIDO CREADA EXITOSAMENTE, REVISA TU CUENTA")
 })
 
 app.get('*', function(req, res) {
