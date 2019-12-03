@@ -23,6 +23,7 @@ app.get('/spotify',function(req,res){
     const authorize_url = 'https://accounts.spotify.com/authorize?' + 'client_id=' + client_id + '&response_type=code&redirect_uri=' + redirect_uri + '&scope=' + scope
     //console.log(authorize_url)
     var artists = req.query.artists
+    encodedArtists = decodeURI(artists)
     var splitedArtists = artists.split(",")
     splitedArtists.forEach(function(artName){
         artistList.push(artName)
